@@ -4,7 +4,7 @@
         !isset($_GET["nip"]) ||
         !isset($_GET["pendidikan"]) ||
         !isset($_GET["jabatan"]) ||
-        !isset($_GET["foto"]) ||
+        !isset($_GET["foto"])
     ){
         header("location: halaman1.php");
         exit;

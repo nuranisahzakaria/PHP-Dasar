@@ -29,11 +29,11 @@
     <ul>
         <?php foreach ($pegawai as $pgw):?>
             <li>
-                <a href="halaman2.php?nama=><?php echo $pgw["nama"];?>
+                <a href="halaman2.php?nama=<?php echo $pgw["nama"];?>
                     &nip=<?php echo $pgw["nip"];?>
                     &pendidikan=<?php echo $pgw["pendidikan"];?>
                     &jabatan=<?php echo $pgw["jabatan"];?>
-                    &foto=?<?php echo $pgw["foto"];?>
+                    &foto=<?php echo $pgw["foto"];?>">
 
                     <?php echo $pgw ["nama"];?>
                 </a>
