@@ -1,3 +1,15 @@
+<?php
+    if(
+        !isset($_GET["nama"]) ||
+        !isset($_GET["nip"]) ||
+        !isset($_GET["pendidikan"]) ||
+        !isset($_GET["jabatan"]) ||
+        !isset($_GET["foto"]) ||
+    ){
+        header("location: halaman1.php");
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +20,11 @@
 </head>
 <body>
     <ul>
-        <li><img src="img/nisa.jpg"></li>
-        <li>Nisa</li>
-        <li>2001700152</li>
-        <li>S1- Teknik Informatika</li>
-        <li>Kepala Puskom</li>
+        <li><img src="img/<?php echo $_GET["foto"]; ?>"></li>
+        <li><?php echo $_GET["nama"]; ?></li>
+        <li><?php echo $_GET["nip"] ?></li>
+        <li><?php echo $_GET["pendidikan"] ?></</li>
+        <li><?php echo $_GET["jabatan"] ?></</li>
     </ul>
     <a href="halaman1.php">Daftar Pegawai</a>
 </body>

@@ -3,14 +3,14 @@
         [
             "nama" => "Nura",
             "nip" => "2001700152",
-            "pendidikan" => "S1-Teknik Informayika",
+            "pendidikan" => "S1-Teknik Informatika",
             "jabatan" => "Kepala Puskom",
             "foto" => "nura.jpg"
         ],
         [
             "nama" => "Nisa",
             "nip" => "2001700152",
-            "pendidikan" => "S1-Teknik Informayika",
+            "pendidikan" => "S1-Teknik Informatika",
             "jabatan" => "Kabid SDM",
             "foto" => "nisa.jpg"
         ],
@@ -29,7 +29,14 @@
     <ul>
         <?php foreach ($pegawai as $pgw):?>
             <li>
-            <a href="halaman2.php"><?php echo $pgw["nama"];?></a>
+                <a href="halaman2.php?nama=><?php echo $pgw["nama"];?>
+                    &nip=<?php echo $pgw["nip"];?>
+                    &pendidikan=<?php echo $pgw["pendidikan"];?>
+                    &jabatan=<?php echo $pgw["jabatan"];?>
+                    &foto=?<?php echo $pgw["foto"];?>
+
+                    <?php echo $pgw ["nama"];?>
+                </a>
             </li>
         <?php endforeach;?>
     </ul>
