@@ -1,4 +1,8 @@
 <?php
+// Nama : NUR ANISAH
+// NIM  : 200170015
+// MK   : A2-Pemograman Web
+
     //cek tombol submit
     if (isset($_POST["submit"])){
 

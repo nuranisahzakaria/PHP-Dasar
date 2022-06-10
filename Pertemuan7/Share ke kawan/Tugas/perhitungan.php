@@ -1,4 +1,8 @@
 <?php
+// Nama : NUR ANISAH
+// NIM  : 200170015
+// MK   : A2-Pemograman Web
+
 	error_reporting(0);
 
     $bilangan1 = $_POST['bilangan1'];
