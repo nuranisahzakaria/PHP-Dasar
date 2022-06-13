@@ -1,0 +1,27 @@
+Perintah cmd
+cd\ => change directory, untuk kembali ke folder sebelumnya
+cd xampp => untuk masuk ke folder xampp
+cd mysql => masuk ke folder mysql
+cd bin  
+cd mysql -u root -p => untuk masuk ke dbms
+show databases => menampilkan database
+create database universitas => membuat database universitas
+use universitas => membuat tabel universitas
+
+create table pegawai (
+    int primary key auto_increment,
+    nama varchar (100),
+    jabatan varchar (100),
+    pendidikan varchar (100)
+);
+
+describe pegawai => menampilkan struktur tabel pegawai
+
+insert into pegawai values
+(' ', 'Nur Anisah', 'Mahasiswa', 'S1 TI');
+
+select * from pegawai; => menampilkan semua data di field pegawai
+
+select nama from pegawai; => menampilkan data kolom nama di field pegawai
+
+delete from pegawai where id = 2; => menghapus data dari tabel
