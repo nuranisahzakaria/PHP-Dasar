@@ -21,11 +21,14 @@
             <th>Gambar</th>
         </tr>
         <tr>
-            <td><?php  ?></td>
-            <td>Sate Matang</td>
-            <td>30000</td>
-            <td>Gambar1.jpg</td>
+            <?php $i=1;  ?>
+            <?php while ($isi = mysqli_fetch_assoc($result)): ?>
+
+            <td><?php echo $i; ?></td>
+            <td><?php echo $isi["nama_menu"]; ?></td>
+            <td><?php echo $isi["harga"]; ?></td>
         </tr>
+        <?php endwhile; ?>
     </table>
 </body>
 </html>
