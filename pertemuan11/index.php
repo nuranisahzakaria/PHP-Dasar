@@ -19,6 +19,7 @@
             <th>Nama menu</th>
             <th>Harga</th>
             <th>Gambar</th>
+            <th>Status</th>
         </tr>
         <tr>
             <?php $i = 1;  ?>
@@ -28,6 +29,7 @@
             <td><?php echo $isi["nama_menu"]; ?></td>
             <td><?php echo $isi["harga"]; ?></td>
             <td><img src="img/<?php echo $isi['gambar'] ?>" width="50px"></td>
+            <td><?php echo $isi['status'] == 0? 'Tidak Tersedia':'Tersedia';?></td>
         </tr>
 
         <?php endwhile; ?>
