@@ -2,7 +2,7 @@
     $koneksi = mysqli_connect("localhost", "root", "", "restoran");
 
     // Ambil data tabel restoran
-    $result = mysqli_query($koneksi, "SELECT * FROM restoran");
+    $result = mysqli_query($koneksi, "SELECT * FROM menu");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,13 +21,15 @@
             <th>Gambar</th>
         </tr>
         <tr>
-            <?php $i=1;  ?>
+            <?php $i = 1;  ?>
             <?php while ($isi = mysqli_fetch_assoc($result)): ?>
 
-            <td><?php echo $i; ?></td>
+            <td><?php echo $i++; ?></td>
             <td><?php echo $isi["nama_menu"]; ?></td>
             <td><?php echo $isi["harga"]; ?></td>
+            <td><img src="img/<?php echo $isi['gambar'] ?>" width="50px"></td>
         </tr>
+
         <?php endwhile; ?>
     </table>
 </body>
