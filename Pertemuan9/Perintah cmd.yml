@@ -4,9 +4,9 @@ cd xampp => untuk masuk ke folder xampp
 cd mysql => masuk ke folder mysql
 cd bin  
 cd mysql -u root -p => untuk masuk ke dbms
-show databases => menampilkan database
-create database universitas => membuat database universitas
-use universitas => membuat tabel universitas
+show databases; => menampilkan database
+create database universitas; => membuat database universitas
+use universitas; => masuk ke database universitas
 
 create table pegawai (
     int primary key auto_increment,
