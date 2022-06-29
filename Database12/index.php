@@ -10,6 +10,7 @@
     <title>Data Restoran</title>
 </head>
 <body>
+    <a href="tambah.php">TAMBAH DATA MENU</a>
     <table border="2" cellpadding="10px">
         <tr>
             <th>No</th>
@@ -30,7 +31,8 @@
             <td><?php echo $isi['status'] == 0? 'Tidak Tersedia':'Tersedia';?></td>
             <td>
                 <a href="edit.php?id=<?php echo $row ["id"] ?>">Edit</a>|
-                <a href="hapus.php?id=<?php echo $row ["id"] ?>">Hapus</a>
+                <a href="hapus.php?id=<?php echo $row ["id"] ?>"
+                onclick="return confirm ('Apakah Anda Ingin Menghapus Data Ini');">Hapus</a>
             </td>
         </tr>
 
