@@ -1,8 +1,5 @@
 <?php 
-    $koneksi = mysqli_connect("localhost", "root", "", "restoran");
-
-    // Ambil data tabel restoran
-    $result = mysqli_query($koneksi, "SELECT * FROM menu");
+    require 'connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
