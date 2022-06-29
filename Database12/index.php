@@ -17,6 +17,7 @@
             <th>Harga</th>
             <th>Gambar</th>
             <th>Status</th>
+            <th>Aksi</th>
         </tr>
         <tr>
             <?php $i = 1;  ?>
@@ -27,6 +28,10 @@
             <td><?php echo $isi["harga"]; ?></td>
             <td><img src="img/<?php echo $isi['gambar'] ?>" width="50px"></td>
             <td><?php echo $isi['status'] == 0? 'Tidak Tersedia':'Tersedia';?></td>
+            <td>
+                <a href="edit.php?id=<?php echo $row ["id"] ?>">Edit</a>|
+                <a href="hapus.php?id=<?php echo $row ["id"] ?>">Hapus</a>
+            </td>
         </tr>
 
         <?php endwhile; ?>
