@@ -15,20 +15,21 @@
         <tr>
             <th>No</th>
             <th>Judul Buku</th>
+            <th>Penulis</th>
+            <th>Penerbit</th>
             <th>Harga</th>
-            <th>Gambar</th>
-            <th>Status</th>
-            <th>Aksi</th>
+            <th>Deskripsi</th>
         </tr>
         <tr>
             <?php $i = 1;  ?>
             <?php while ($isi = mysqli_fetch_assoc($result)): ?>
 
             <td><?php echo $i++; ?></td>
-            <td><?php echo $isi["nama_menu"]; ?></td>
+            <td><?php echo $isi["judul_buku"]; ?></td>
+            <td><?php echo $isi["penulis"]; ?></td>
+            <td><?php echo $isi["penerbit"]; ?></td>
             <td><?php echo $isi["harga"]; ?></td>
-            <td><img src="img/<?php echo $isi['gambar'] ?>" width="50px"></td>
-            <td><?php echo $isi['status'] == 0? 'Tidak Tersedia':'Tersedia';?></td>
+            <td><?php echo $isi["deskripsi"]; ?></td>
             <td>
                 <a href="edit.php?id=<?php echo $row ["id"] ?>">Edit</a>|
                 <a href="hapus.php?id=<?php echo $row ["id"] ?>"
