@@ -15,7 +15,13 @@
     // Query insert data
         $query = "INSERT INTO buku VALUES
             ('', '$judul_buku', '$gambar','$penulis', '$penerbit', '$harga', '$deskripsi')";
-        mysqli_query($koneksi, $query);
+
+        if (mysqli_query($koneksi, $query)){
+            echo '<script>alert("Tambah data berhasil")</script>';
+            header("Location: index.php");
+        } else{
+            echo '<script>alert("Tambah data gagal")</script>';
+        }
     }
 ?>
 <!DOCTYPE html>

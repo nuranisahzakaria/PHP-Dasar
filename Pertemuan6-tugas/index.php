@@ -113,7 +113,7 @@
         [
             "Judul Buku" => "Untuk Bertahan : Tentang Kita Yang Belajar Menerima",
             "Penulis" => "Elda Rina",
-            "Deskripsi" => "'Untuk Bertahan: Tentang Kita yang Belajar Menerima' dipersembahkan untuk
+            "Deskripsi" => "Untuk Bertahan: Tentang Kita yang Belajar Menerima' dipersembahkan untuk
                             jiwa-jiwa yang sedang terluka dalam bermacam keadaan. Perjalanan mengikhlaskan
                             dimulai saat kamu berani memilih hari ini. Hatimu berhak bahagia. Duniamu harus 
                             kembali berwarna setelah berhasil menjalani dan menyembuhkan.",

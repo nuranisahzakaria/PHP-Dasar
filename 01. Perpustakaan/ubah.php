@@ -20,18 +20,19 @@
 
         // Query ubah data
             $query = "UPDATE buku SET
-                    judul_buku = '$judul_buku',
-                    gambar = '$gambar',
-                    penulis = '$penulis',
-                    penerbit = '$penerbit',
-                    harga = '$harga',
-                    deskripsi = '$deskripsi'
-                    WHERE id=$id ";
+                judul_buku = '$judul_buku',
+                gambar = '$gambar',
+                penulis = '$penulis',
+                penerbit = '$penerbit',
+                harga = '$harga',
+                deskripsi = '$deskripsi'
+                WHERE id=$id ";
 
         if (mysqli_query($koneksi, $query)){
+            echo '<script>alert("Ubah data berhasil")</script>';
             header("Location: index.php");
         } else{
-            echo "Edit Data Gagal";
+            echo '<script>alert("Ubah data gagal")</script>';
         }
     }
 ?>
@@ -41,12 +42,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Buku</title>
+    <title>Ubah Data Buku</title>
 </head>
 <body>
     <h1>UBAH DATA BUKU</h1>
     <?php while ($row = mysqli_fetch_assoc($data)): ?>
-    <form action="edit.php" method="post"> 
+    <form action="ubah.php" method="post"> 
 
         <!-- Element input yang tidak terlihat -->
         <!-- Untuk mendeteksi ID -->
@@ -59,7 +60,10 @@
             </tr>
             <tr>
                 <td><label for="gambar">Gambar : </label></td>
-                <td><input type="file" name="gambar" id="gambar" value="<?php echo $row['gambar'] ?>"></td>
+                <!-- <td><input type="file" name="gambar" id="gambar" value="<?php // echo $row['gambar'] ?>"></td> -->
+                <td><img src="img/<?php echo $row['gambar'] ?>" width="50px">
+                <input type="hidden" name="gambar" value="<?php echo $row['gambar'] ?>">
+				<input type="file" name="gambar" class="input-control"></td>
             </tr>
             <tr>
                 <td><label for="penulis">Penulis : </label></td>
@@ -75,9 +79,9 @@
             </tr>
             <tr>
                 <td><label for="deskripsi">Deskripsi : </label></td>
-                <td><textarea name="deskripsi" placeholder="Deskripsi" cols="40" rows="10"></textarea></td>
+                <td><textarea name="deskripsi" placeholder="Deskripsi" cols="40" rows="10"><?php echo $row['deskripsi'] ?></textarea></td>
             </tr>
-            <tr>
+            <tr> 
                 <td></td>
                 <td><button type="submit" name="submit" onclick="return confirm ('Apakah Data Ini Akan diubah?')">Ubah Data</button></td>
             </tr>
