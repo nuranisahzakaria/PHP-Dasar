@@ -6,6 +6,7 @@
 
         // Mengambil data dari form dimasukkan ke variabel
         $judul_buku = $_POST["judul_buku"];
+        $gambar = $_POST["gambar"];
         $penulis = $_POST["penulis"];
         $penerbit = $_POST["penerbit"];
         $harga = $_POST["harga"];
@@ -13,7 +14,7 @@
 
     // Query insert data
         $query = "INSERT INTO buku VALUES
-            ('', '$judul_buku', '$penulis', '$penerbit', '$harga', '$deskripsi')";
+            ('', '$judul_buku', '$gambar','$penulis', '$penerbit', '$harga', '$deskripsi')";
         mysqli_query($koneksi, $query);
     }
 ?>
@@ -32,6 +33,10 @@
             <tr>
                 <td><label for="judul_buku">Judul Buku: </label></td>
                 <td><input type="text" name="judul_buku" id="judul_buku"></td>
+            </tr>
+            <tr>
+                <td><label for="gambar">Gambar : </label></td>
+                <td><input type="file" name="gambar" id="gambar" value="<?php echo $row['gambar'] ?>"></td>
             </tr>
             <tr>
                 <td><label for="penulis">Penulis : </label></td>

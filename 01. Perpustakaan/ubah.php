@@ -12,6 +12,7 @@
         // Memasukkan data yang diubah
             $id = $_POST["id"];
             $judul_buku = $_POST["judul_buku"];
+            $gambar = $_POST["gambar"];
             $penulis = $_POST["penulis"];
             $penerbit = $_POST["penerbit"];
             $harga = $_POST["harga"];
@@ -20,6 +21,7 @@
         // Query ubah data
             $query = "UPDATE buku SET
                     judul_buku = '$judul_buku',
+                    gambar = '$gambar',
                     penulis = '$penulis',
                     penerbit = '$penerbit',
                     harga = '$harga',
@@ -56,6 +58,10 @@
                 <td><input type="text" name="judul_buku" id="judul_buku" value="<?php echo $row['judul_buku']; ?>"></td>
             </tr>
             <tr>
+                <td><label for="gambar">Gambar : </label></td>
+                <td><input type="file" name="gambar" id="gambar" value="<?php echo $row['gambar'] ?>"></td>
+            </tr>
+            <tr>
                 <td><label for="penulis">Penulis : </label></td>
                 <td><input type="text" name="penulis" id="penulis" value="<?php echo $row['penulis'] ?>"></td>
             </tr>
@@ -69,7 +75,7 @@
             </tr>
             <tr>
                 <td><label for="deskripsi">Deskripsi : </label></td>
-                <td><input type="text" name="deskripsi" id="deskripsi" value="<?php echo $row['deskripsi'] ?>"></td>
+                <td><textarea name="deskripsi" placeholder="Deskripsi" cols="40" rows="10"></textarea></td>
             </tr>
             <tr>
                 <td></td>
