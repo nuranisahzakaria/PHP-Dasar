@@ -31,7 +31,7 @@
             <td><img src="img/<?php echo $isi['gambar'] ?>" width="50px"></td>
             <td><?php echo $isi["penulis"]; ?></td>
             <td><?php echo $isi["penerbit"]; ?></td>
-            <td><?php echo $isi["harga"]; ?></td>
+            <td>Rp. <?php echo number_format($isi["harga"]); ?></td>
             <td><?php echo $isi["deskripsi"]; ?></td>
             <td>
                 <a href="ubah.php?id=<?php echo $isi ["id"] ?>">Ubah</a>|

@@ -60,10 +60,7 @@
             </tr>
             <tr>
                 <td><label for="gambar">Gambar : </label></td>
-                <!-- <td><input type="file" name="gambar" id="gambar" value="<?php // echo $row['gambar'] ?>"></td> -->
-                <td><img src="img/<?php echo $row['gambar'] ?>" width="50px">
-                <input type="hidden" name="gambar" value="<?php echo $row['gambar'] ?>">
-				<input type="file" name="gambar" class="input-control"></td>
+                <td><input type="file" name="gambar" id="gambar" value="<?php echo $row['gambar'] ?>"></td>
             </tr>
             <tr>
                 <td><label for="penulis">Penulis : </label></td>
