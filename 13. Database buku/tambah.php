@@ -5,7 +5,6 @@
     if (isset($_POST["submit"])){
 
         // Mengambil data dari form dimasukkan ke variabel
-        $id = $_POST["id"];
         $judul_buku = $_POST["judul_buku"];
         $penulis = $_POST["penulis"];
         $penerbit = $_POST["penerbit"];
@@ -49,7 +48,11 @@
             <br>
             <tr>
                 <td><label for="harga">Deskripsi : </label></td>
-                <td><textarea name="deskripsi" placeholder="Deskripsi"></textarea></td>
+                <td><textarea name="deskripsi" placeholder="Deskripsi" cols="40" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" name="submit">Tambah</button></td>
             </tr>
         </table>
     </form>

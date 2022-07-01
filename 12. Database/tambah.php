@@ -39,13 +39,6 @@
                 <td><label for="gambar">GAMBAR</label></td>
                 <td><input type="file" name="gambar" id="gambar"></td>
             </tr>
-            <!-- <tr>
-                <select class="input-control" name="status">
-                    <option value="">--Pilih--</option>
-                    <option value="1" <?php echo ($status_menu->status == 1)? 'selected':''; ?>>Aktif</option>
-                    <option value="0" <?php echo ($status_menu->status == 0)? 'selected':''; ?>>Tidak Aktif</option>
-                </select>
-            </tr> -->
         </table>
     </form>
 </body>
