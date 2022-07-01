@@ -53,7 +53,7 @@
         <table>
             <tr>
                 <td><label for="judul_buku">Judul Buku : </label></td>
-                <td><input type="text" name="judul_buku" id="judul_buku" value="<?php echo $row['nama']; ?>"></td>
+                <td><input type="text" name="judul_buku" id="judul_buku" value="<?php echo $row['judul_buku']; ?>"></td>
             </tr>
             <tr>
                 <td><label for="penulis">Penulis : </label></td>

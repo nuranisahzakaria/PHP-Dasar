@@ -32,8 +32,8 @@
             <td><?php echo $isi["harga"]; ?></td>
             <td><?php echo $isi["deskripsi"]; ?></td>
             <td>
-                <a href="ubah.php?id=<?php echo $row ["id"] ?>">Ubah</a>|
-                <a href="hapus.php?id=<?php echo $row ["id"] ?>"
+                <a href="ubah.php?id=<?php echo $isi ["id"] ?>">Ubah</a>|
+                <a href="hapus.php?id=<?php echo $isi ["id"] ?>"
                 onclick="return confirm ('Apakah Anda Ingin Menghapus Data Ini');">Hapus</a>
             </td>
         </tr>
