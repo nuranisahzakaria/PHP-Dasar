@@ -46,8 +46,10 @@
                 <td><label for="harga">Harga : </label></td>
                 <td><input type="text" name="harga" id="harga"></td>
             </tr>
+            <br>
             <tr>
-                <textarea name="deskripsi" id="deskripsi" cols="30" rows="10">Deskripsi</textarea>
+                <td><label for="harga">Deskripsi : </label></td>
+                <td><textarea name="deskripsi" placeholder="Deskripsi"></textarea></td>
             </tr>
         </table>
     </form>

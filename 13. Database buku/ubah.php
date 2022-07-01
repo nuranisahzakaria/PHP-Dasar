@@ -18,7 +18,7 @@
             $deskripsi = $_POST["deskripsi"];
 
         // Query ubah data
-            $query = "UPDATE menu SET
+            $query = "UPDATE buku SET
                     judul_buku = '$judul_buku',
                     penulis = '$penulis',
                     penerbit = '$penerbit',

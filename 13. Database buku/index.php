@@ -19,6 +19,7 @@
             <th>Penerbit</th>
             <th>Harga</th>
             <th>Deskripsi</th>
+            <th>Aksi</th>
         </tr>
         <tr>
             <?php $i = 1;  ?>
@@ -31,7 +32,7 @@
             <td><?php echo $isi["harga"]; ?></td>
             <td><?php echo $isi["deskripsi"]; ?></td>
             <td>
-                <a href="edit.php?id=<?php echo $row ["id"] ?>">Edit</a>|
+                <a href="ubah.php?id=<?php echo $row ["id"] ?>">Ubah</a>|
                 <a href="hapus.php?id=<?php echo $row ["id"] ?>"
                 onclick="return confirm ('Apakah Anda Ingin Menghapus Data Ini');">Hapus</a>
             </td>
