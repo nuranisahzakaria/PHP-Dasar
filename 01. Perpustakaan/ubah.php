@@ -1,4 +1,7 @@
 <?php 
+// kenapa pas buka di laptop orang ngga bisa ya?
+// padahal dilaptopku bisa-bisa aja
+// ngga tau lagi lah, udah pusing banget ini
     require "koneksi.php";
 
     // Mengambil id dari URL
