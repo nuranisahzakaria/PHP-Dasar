@@ -11,7 +11,7 @@
 </head>
 <body>
     <a href="tambah.php">TAMBAH DATA BUKU</a>
-    <table border="2" cellpadding="10px">
+    <table border="1" cellpadding="5px">
         <tr>
             <th>No</th>
             <th>Judul Buku</th>

@@ -58,7 +58,7 @@
             </tr>
             <br>
             <tr>
-                <td><label for="harga">Deskripsi : </label></td>
+                <td><label for="deskripsi">Deskripsi : </label></td>
                 <td><textarea name="deskripsi" placeholder="Deskripsi" cols="40" rows="10"></textarea></td>
             </tr>
             <tr>
